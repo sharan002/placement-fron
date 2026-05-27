@@ -64,6 +64,43 @@ header {
 .tab:hover  { color: var(--primary); }
 .tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 600; }
 
+/* ── Source Bar ── */
+.source-bar {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .6rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+.source-label {
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+    margin-right: .25rem;
+}
+.source-btn {
+    padding: .35rem 1rem;
+    border: 1.5px solid var(--border);
+    border-radius: 99px;
+    background: white;
+    color: var(--muted);
+    font-size: .82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color .2s, color .2s, background .2s;
+    white-space: nowrap;
+}
+.source-btn:hover { border-color: var(--primary); color: var(--primary); }
+.source-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    font-weight: 600;
+}
+
 /* ── Filters ── */
 .filters {
     background: white;
